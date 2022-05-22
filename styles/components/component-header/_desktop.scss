@@ -1,0 +1,113 @@
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  header {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    background-color: $primary-color-for-header;
+
+    .header-inner-container {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+
+      .div-before-red {
+        width: 10.42%;
+        height: 425px;
+        // display: inline-block;
+      }
+
+      .div-after-red {
+        width: 68%;
+        height: 425px;
+        background-color: aqua;
+      }
+
+      .red-container {
+        width: 16.41%;
+        height: 425px;
+        background-color: $primary-color-for-container;
+        padding-left: 1.82%;
+        // display: inline-block;
+        // margin-left: 200px;
+
+        .container-for-img-and-h2 {
+          display: flex;
+          align-items: flex-start;
+          margin-top: 30px;
+          margin-bottom: 40px;
+
+          h2 {
+            @include fonts-and-sizes(
+              Montserrat-Bold,
+              18px,
+              $primary-color-for-h2
+            );
+
+            text-transform: uppercase;
+          }
+        }
+
+        .container-for-img-and-h2 + p {
+          @include fonts-and-sizes(
+            Montserrat-Regular,
+            10px,
+            $primary-color-for-h2
+          );
+          background-color: $bg-color-for-p;
+          width: 100px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        h1 {
+          @include fonts-and-sizes(
+            Montserrat-Bold,
+            22px,
+            $primary-color-for-h2
+          );
+
+          span {
+            font-size: 26px;
+          }
+        }
+
+        h1 + p {
+          @include fonts-and-sizes(sans-serif, 16px, $primary-color-for-h2);
+        }
+
+        .for-icon-and-p {
+          display: flex;
+
+          p {
+            @include fonts-and-sizes(
+              Montserrat-Regular,
+              18px,
+              $primary-color-for-p
+            );
+
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .red-container + svg {
+      display: inline-block;
+      width: 3.35%;
+    }
+    .container-for-borders {
+      display: flex;
+
+      .grey-border {
+        width: 28.646%;
+        height: 65px;
+        background-color: $primary-color-for-grey-border;
+      }
+
+      .black-border {
+        width: 71.354%;
+        height: 65px;
+        background-color: $primary-color-for-black-border;
+      }
+    }
+  }
+}

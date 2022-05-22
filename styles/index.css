@@ -169,5 +169,93 @@ table {
   font-family: Montserrat-Thin;
   src: url("./fonts/Montserrat-Thin.ttf");
 }
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  header {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #eeeeee;
+  }
+  header .header-inner-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  header .header-inner-container .div-before-red {
+    width: 10.42%;
+    height: 425px;
+  }
+  header .header-inner-container .div-after-red {
+    width: 68%;
+    height: 425px;
+    background-color: aqua;
+  }
+  header .header-inner-container .red-container {
+    width: 16.41%;
+    height: 425px;
+    background-color: #ed1c24;
+    padding-left: 1.82%;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 h2 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 + p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #707070;
+    width: 100px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  header .header-inner-container .red-container h1 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  header .header-inner-container .red-container h1 span {
+    font-size: 26px;
+  }
+  header .header-inner-container .red-container h1 + p {
+    font-family: sans-serif, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  header .header-inner-container .red-container .for-icon-and-p {
+    display: flex;
+  }
+  header .header-inner-container .red-container .for-icon-and-p p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 18px;
+    color: #fefefe;
+    text-transform: uppercase;
+  }
+  header .red-container + svg {
+    display: inline-block;
+    width: 3.35%;
+  }
+  header .container-for-borders {
+    display: flex;
+  }
+  header .container-for-borders .grey-border {
+    width: 28.646%;
+    height: 65px;
+    background-color: #dbdbdb;
+  }
+  header .container-for-borders .black-border {
+    width: 71.354%;
+    height: 65px;
+    background-color: #111111;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

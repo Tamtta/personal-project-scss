@@ -31,7 +31,12 @@ main {
         width: 9.302rem;
         height: 8.69rem;
         background-color: $h1-color;
-        border: 7px solid $border-color;
+        border: 7px solid $h1-color;
+
+        &:hover {
+          border-color: $border-color;
+          cursor: pointer;
+        }
       }
     }
   }

@@ -1,0 +1,39 @@
+main {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+
+  .component-3 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $background-color;
+    padding: 5.2rem 20rem 5.5rem 20rem;
+
+    .huge-div {
+      width: 62.2rem;
+      height: 40.9rem;
+      background-color: $h1-color;
+      margin-right: 3.2rem;
+    }
+
+    h1 {
+      @include fonts-and-sizes(Montserrat-Bold, 3rem, $h1-color);
+      margin-bottom: 3.5rem;
+    }
+
+    .grid-container-div {
+      display: grid;
+      grid-template: repeat(3, 10.702rem) / repeat(3, 10.09rem);
+      column-gap: 2rem;
+      row-gap: 1.45rem;
+
+      div {
+        width: 9.302rem;
+        height: 8.69rem;
+        background-color: $h1-color;
+        border: 7px solid $border-color;
+      }
+    }
+  }
+}

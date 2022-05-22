@@ -176,6 +176,10 @@ html {
   font-family: Montserrat-Thin;
   src: url("./fonts/Montserrat-Thin.ttf");
 }
+@font-face {
+  font-family: OpenSans-Light;
+  src: url("./fonts/OpenSans-Light.ttf");
+}
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
   html {
     font-size: 33.3%;
@@ -274,7 +278,7 @@ header .header-inner-container .red-container h1 span {
   font-size: 2.6rem;
 }
 header .header-inner-container .red-container h1 + p {
-  font-family: sans-serif, sans-serif;
+  font-family: OpenSans-Light, sans-serif;
   font-size: 1.6rem;
   color: #ffffff;
   margin-left: 0.55rem;
@@ -411,6 +415,128 @@ header .container-for-borders .black-border div .fa-solid {
   header .container-for-borders .black-border div .fa-solid {
     visibility: hidden;
   }
+}
+@media screen and (min-width: 1024px) and (max-width: 1026px) {
+  html {
+    font-size: 33.3%;
+  }
+}
+@media screen and (min-width: 1027px) and (max-width: 1199px) {
+  html {
+    font-size: 35.8%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1202px) {
+  html {
+    font-size: 39.06%;
+  }
+}
+@media screen and (min-width: 1203px) and (max-width: 1399px) {
+  html {
+    font-size: 42.32%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  html {
+    font-size: 45.6%;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 52.08%;
+  }
+}
+main {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+}
+main .component-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+main .component-2 .container-for-divs {
+  display: flex;
+}
+main .component-2 .container-for-divs .div-before-grey {
+  width: 20rem;
+  height: 52rem;
+  background-color: #dbdbdb;
+}
+main .component-2 .container-for-divs .grey-container {
+  width: 35rem;
+  height: 52rem;
+  background-color: #898989;
+  margin-right: 5rem;
+}
+main .component-2 .text-container h1 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 3rem;
+  color: #222222;
+  margin-top: 4rem;
+  margin-bottom: 4.5rem;
+}
+main .component-2 .text-container .p-grid-container {
+  width: 60rem;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  row-gap: 2.7rem;
+}
+main .component-2 .text-container .p-grid-container .p1 {
+  font-family: OpenSans-Light, sans-serif;
+  font-size: 2rem;
+  color: #222222;
+  grid-column: span 2;
+  line-height: 3rem;
+}
+main .component-2 .text-container .p-grid-container .p2,
+main .component-2 .text-container .p-grid-container .p3,
+main .component-2 .text-container .p-grid-container .p4 {
+  font-family: OpenSans-Light, sans-serif;
+  font-size: 1.4rem;
+  color: #222222;
+  line-height: 2rem;
+}
+main .component-2 .text-container .p-grid-container .p4 {
+  grid-column: span 2;
+}
+
+main {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+}
+main .component-3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #111111;
+  padding: 5.2rem 20rem 5.5rem 20rem;
+}
+main .component-3 .huge-div {
+  width: 62.2rem;
+  height: 40.9rem;
+  background-color: #fefefe;
+  margin-right: 3.2rem;
+}
+main .component-3 h1 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 3rem;
+  color: #fefefe;
+  margin-bottom: 3.5rem;
+}
+main .component-3 .grid-container-div {
+  display: grid;
+  grid-template: repeat(3, 10.702rem)/repeat(3, 10.09rem);
+  column-gap: 2rem;
+  row-gap: 1.45rem;
+}
+main .component-3 .grid-container-div div {
+  width: 9.302rem;
+  height: 8.69rem;
+  background-color: #fefefe;
+  border: 7px solid hsla(358deg, 85%, 52%, 0.902);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -80,7 +80,7 @@ header {
       }
 
       h1 + p {
-        @include fonts-and-sizes(sans-serif, 1.6rem, $primary-color-for-h2);
+        @include fonts-and-sizes(OpenSans-Light, 1.6rem, $primary-color-for-h2);
         margin-left: 0.55rem;
         line-height: 2rem;
         margin-bottom: 4rem;

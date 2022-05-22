@@ -4,11 +4,10 @@ main {
   margin: 0 auto;
 
   .component-3 {
-    width: 100%;
     display: flex;
     justify-content: flex-start;
     background-color: $background-color;
-    padding: 5.2rem 20rem 5.5rem 20rem;
+    padding: 5.2rem 0 5.5rem 20rem;
 
     .huge-div {
       width: 62.2rem;

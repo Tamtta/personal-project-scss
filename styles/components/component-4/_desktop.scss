@@ -1,0 +1,23 @@
+main {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+
+  .component-4 {
+    width: 100%;
+
+    iframe {
+      position: absolute;
+      z-index: -1;
+      width: 192rem;
+      height: 44rem;
+    }
+
+    .component-4-container {
+      width: 35rem;
+      height: 44rem;
+      background-color: $primary-color-for-container;
+      margin-left: 20rem;
+    }
+  }
+}

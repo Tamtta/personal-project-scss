@@ -502,17 +502,46 @@ main .component-2 .text-container .p-grid-container .p4 {
   grid-column: span 2;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1026px) {
+  html {
+    font-size: 33.3%;
+  }
+}
+@media screen and (min-width: 1027px) and (max-width: 1199px) {
+  html {
+    font-size: 35.8%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1202px) {
+  html {
+    font-size: 39.06%;
+  }
+}
+@media screen and (min-width: 1203px) and (max-width: 1399px) {
+  html {
+    font-size: 42.32%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  html {
+    font-size: 45.6%;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 52.08%;
+  }
+}
 main {
   max-width: 192rem;
   height: auto;
   margin: 0 auto;
 }
 main .component-3 {
-  width: 100%;
   display: flex;
   justify-content: flex-start;
   background-color: #111111;
-  padding: 5.2rem 20rem 5.5rem 20rem;
+  padding: 5.2rem 0 5.5rem 20rem;
 }
 main .component-3 .huge-div {
   width: 62.2rem;
@@ -537,6 +566,57 @@ main .component-3 .grid-container-div div {
   height: 8.69rem;
   background-color: #fefefe;
   border: 7px solid hsla(358deg, 85%, 52%, 0.902);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1026px) {
+  html {
+    font-size: 33.3%;
+  }
+}
+@media screen and (min-width: 1027px) and (max-width: 1199px) {
+  html {
+    font-size: 35.8%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1202px) {
+  html {
+    font-size: 39.06%;
+  }
+}
+@media screen and (min-width: 1203px) and (max-width: 1399px) {
+  html {
+    font-size: 42.32%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  html {
+    font-size: 45.6%;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 52.08%;
+  }
+}
+main {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+}
+main .component-4 {
+  width: 100%;
+}
+main .component-4 iframe {
+  position: absolute;
+  z-index: -1;
+  width: 192rem;
+  height: 44rem;
+}
+main .component-4 .component-4-container {
+  width: 35rem;
+  height: 44rem;
+  background-color: #ed1c24;
+  margin-left: 20rem;
 }
 
 /*# sourceMappingURL=index.css.map */

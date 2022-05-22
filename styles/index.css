@@ -337,7 +337,7 @@ header .container-for-borders .grey-border {
   background-color: #dbdbdb;
 }
 header .container-for-borders .black-border {
-  width: 135rem;
+  width: 137rem;
   height: 6.5rem;
   background-color: #111111;
   display: flex;
@@ -693,6 +693,34 @@ main .component-4 .component-4-container svg {
   html {
     font-size: 52.08%;
   }
+}
+footer {
+  max-width: 192rem;
+  height: 16.1rem;
+  margin: 0 auto;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  display: inline-block;
+  margin-top: 5.5rem;
+  margin-left: 22.5rem;
+}
+footer p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-size: 1.4rem;
+  color: #fefefe;
+  line-height: 1.68rem;
+  display: inline-block;
+}
+footer .fa-angle-up {
+  font-size: 3.9rem;
+  color: #fefefe;
+  padding: 1rem;
+  margin-right: 10rem;
+  border: 1px solid #fefefe;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,29 @@
+footer {
+  max-width: 192rem;
+  height: 16.1rem;
+  margin: 0 auto;
+  background-color: $footer-bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    display: inline-block;
+    margin-top: 5.5rem;
+    margin-left: 22.5rem;
+  }
+
+  p {
+    @include fonts-and-sizes(Montserrat-Regular, 1.4rem, $footer-p-color);
+    line-height: 1.68rem;
+    display: inline-block;
+  }
+
+  .fa-angle-up {
+    font-size: 3.9rem;
+    color: $footer-p-color;
+    padding: 1rem;
+    margin-right: 10rem;
+    border: 1px solid $footer-p-color;
+  }
+}

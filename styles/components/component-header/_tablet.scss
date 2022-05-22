@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  // html {
+  //   font-size: 25%;
+  //   overflow-x: hidden;
+  // }
+
+  header {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+
+    .header-inner-container {
+      .div-before-red {
+        width: 4rem;
+      }
+
+      .red-container {
+        width: 32rem;
+      }
+    }
+
+    .container-for-borders {
+      .grey-border {
+        width: 4rem;
+      }
+
+      .black-border {
+        width: 73rem;
+        justify-content: flex-end;
+
+        div {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}

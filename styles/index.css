@@ -133,6 +133,13 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* Does not work on Safari */
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: Montserrat-Black;
   src: url("./fonts/Montserrat-Black.ttf");
@@ -169,92 +176,240 @@ table {
   font-family: Montserrat-Thin;
   src: url("./fonts/Montserrat-Thin.ttf");
 }
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
-  header {
-    max-width: 1920px;
-    height: auto;
-    margin: 0 auto;
-    background-color: #eeeeee;
+@media screen and (min-width: 1024px) and (max-width: 1026px) {
+  html {
+    font-size: 33.3%;
   }
-  header .header-inner-container {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+}
+@media screen and (min-width: 1027px) and (max-width: 1199px) {
+  html {
+    font-size: 35.8%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1202px) {
+  html {
+    font-size: 39.06%;
+  }
+}
+@media screen and (min-width: 1203px) and (max-width: 1399px) {
+  html {
+    font-size: 42.32%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  html {
+    font-size: 45.6%;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 52.08%;
+  }
+}
+header {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+  background-color: #eeeeee;
+}
+header .header-inner-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+header .header-inner-container .div-before-red {
+  width: 20rem;
+  height: 42.5rem;
+}
+header .header-inner-container .div-after-red {
+  height: 42.5rem;
+  background-color: aqua;
+}
+header .header-inner-container .red-container {
+  width: 32rem;
+  height: 42.5rem;
+  background-color: #ed1c24;
+  padding-left: 3rem;
+  position: relative;
+}
+header .header-inner-container .red-container .container-for-img-and-h2 {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 4.2rem;
+}
+header .header-inner-container .red-container .container-for-img-and-h2 h2 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.03rem;
+}
+header .header-inner-container .red-container .container-for-img-and-h2 + p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #111111;
+  width: 9rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+header .header-inner-container .red-container h1 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+  width: 28rem;
+  margin-left: 0.55rem;
+  letter-spacing: -0.08rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 1.7rem;
+}
+header .header-inner-container .red-container h1 span {
+  font-size: 2.6rem;
+}
+header .header-inner-container .red-container h1 + p {
+  font-family: sans-serif, sans-serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-left: 0.55rem;
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}
+header .header-inner-container .red-container .for-icon-and-p {
+  display: flex;
+  align-items: center;
+  margin-left: 0.55rem;
+  border-bottom: 1px solid #ffffff;
+}
+header .header-inner-container .red-container .for-icon-and-p p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-size: 1.8rem;
+  color: #fefefe;
+  margin-left: 0.7rem;
+  text-transform: uppercase;
+}
+header .header-inner-container .red-container .for-fa-icons {
+  width: 13rem;
+  height: 4rem;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+header .header-inner-container .red-container .for-fa-icons .fa-solid,
+header .header-inner-container .red-container .for-fa-icons .fa-regular {
+  font-size: 2.1rem;
+  color: #ffffff;
+}
+header .header-inner-container .red-container .for-fa-icons .fa-eye,
+header .header-inner-container .red-container .for-fa-icons .fa-image {
+  border-right: 1px solid #ffffff;
+  padding: 1rem;
+}
+header .header-inner-container .red-container .for-fa-icons .fa-location-dot {
+  padding: 1rem 0 1rem 1rem;
+}
+header .red-container + svg {
+  display: inline-block;
+  width: 6.3rem;
+  height: 5.9rem;
+}
+header .container-for-borders {
+  display: flex;
+}
+header .container-for-borders .grey-border {
+  width: 55rem;
+  height: 6.5rem;
+  background-color: #dbdbdb;
+}
+header .container-for-borders .black-border {
+  width: 135rem;
+  height: 6.5rem;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container-for-borders .black-border div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 11.6rem;
+  height: 6.2rem;
+}
+header .container-for-borders .black-border div .fa-solid {
+  font-size: 2.4rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
   }
   header .header-inner-container .div-before-red {
-    width: 10.42%;
-    height: 425px;
-  }
-  header .header-inner-container .div-after-red {
-    width: 68%;
-    height: 425px;
-    background-color: aqua;
+    width: 4rem;
   }
   header .header-inner-container .red-container {
-    width: 16.41%;
-    height: 425px;
-    background-color: #ed1c24;
-    padding-left: 1.82%;
-  }
-  header .header-inner-container .red-container .container-for-img-and-h2 {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
-  header .header-inner-container .red-container .container-for-img-and-h2 h2 {
-    font-family: Montserrat-Bold, sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-  header .header-inner-container .red-container .container-for-img-and-h2 + p {
-    font-family: Montserrat-Regular, sans-serif;
-    font-size: 10px;
-    color: #ffffff;
-    background-color: #707070;
-    width: 100px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  header .header-inner-container .red-container h1 {
-    font-family: Montserrat-Bold, sans-serif;
-    font-size: 22px;
-    color: #ffffff;
-  }
-  header .header-inner-container .red-container h1 span {
-    font-size: 26px;
-  }
-  header .header-inner-container .red-container h1 + p {
-    font-family: sans-serif, sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-  }
-  header .header-inner-container .red-container .for-icon-and-p {
-    display: flex;
-  }
-  header .header-inner-container .red-container .for-icon-and-p p {
-    font-family: Montserrat-Regular, sans-serif;
-    font-size: 18px;
-    color: #fefefe;
-    text-transform: uppercase;
-  }
-  header .red-container + svg {
-    display: inline-block;
-    width: 3.35%;
-  }
-  header .container-for-borders {
-    display: flex;
+    width: 32rem;
   }
   header .container-for-borders .grey-border {
-    width: 28.646%;
-    height: 65px;
-    background-color: #dbdbdb;
+    width: 4rem;
   }
   header .container-for-borders .black-border {
-    width: 71.354%;
-    height: 65px;
-    background-color: #111111;
+    width: 73rem;
+    justify-content: flex-end;
+  }
+  header .container-for-borders .black-border div {
+    margin-right: 3rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    min-width: 32rem;
+    max-width: 76.7rem;
+  }
+  header .header-inner-container {
+    justify-content: space-around;
+  }
+  header .header-inner-container .div-before-red {
+    width: 0;
+  }
+  header .header-inner-container .red-container {
+    width: 27rem;
+  }
+  header .header-inner-container .red-container .for-fa-icons {
+    border: 1px solid #ffffff;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%);
+  }
+  header .red-container + svg {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+  }
+  header .container-for-borders .grey-border {
+    width: 0;
+  }
+  header .container-for-borders .black-border {
+    width: 100%;
+    height: 6rem;
+  }
+  header .container-for-borders .black-border div .fa-solid {
+    visibility: hidden;
   }
 }
 

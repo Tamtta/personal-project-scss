@@ -1,112 +1,173 @@
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
-  header {
-    max-width: 1920px;
-    height: auto;
-    margin: 0 auto;
-    background-color: $primary-color-for-header;
+header {
+  max-width: 192rem;
+  height: auto;
+  margin: 0 auto;
+  background-color: $primary-color-for-header;
 
-    .header-inner-container {
-      width: 100%;
-      display: flex;
-      align-items: flex-start;
+  .header-inner-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
 
-      .div-before-red {
-        width: 10.42%;
-        height: 425px;
-        // display: inline-block;
-      }
+    .div-before-red {
+      width: 20rem;
+      height: 42.5rem;
+    }
 
-      .div-after-red {
-        width: 68%;
-        height: 425px;
-        background-color: aqua;
-      }
+    .div-after-red {
+      height: 42.5rem;
+      background-color: aqua;
+    }
 
-      .red-container {
-        width: 16.41%;
-        height: 425px;
-        background-color: $primary-color-for-container;
-        padding-left: 1.82%;
-        // display: inline-block;
-        // margin-left: 200px;
+    .red-container {
+      width: 32rem;
+      height: 42.5rem;
+      background-color: $primary-color-for-container;
+      padding-left: 3rem;
+      position: relative;
 
-        .container-for-img-and-h2 {
-          display: flex;
-          align-items: flex-start;
-          margin-top: 30px;
-          margin-bottom: 40px;
+      .container-for-img-and-h2 {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 3rem;
+        margin-bottom: 4.2rem;
 
-          h2 {
-            @include fonts-and-sizes(
-              Montserrat-Bold,
-              18px,
-              $primary-color-for-h2
-            );
-
-            text-transform: uppercase;
-          }
-        }
-
-        .container-for-img-and-h2 + p {
-          @include fonts-and-sizes(
-            Montserrat-Regular,
-            10px,
-            $primary-color-for-h2
-          );
-          background-color: $bg-color-for-p;
-          width: 100px;
-          text-transform: uppercase;
-          text-align: center;
-        }
-
-        h1 {
+        h2 {
           @include fonts-and-sizes(
             Montserrat-Bold,
-            22px,
+            1.8rem,
             $primary-color-for-h2
           );
 
-          span {
-            font-size: 26px;
-          }
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-left: 0.5rem;
+          line-height: 2.5rem;
+          letter-spacing: -0.03rem;
+        }
+      }
+
+      .container-for-img-and-h2 + p {
+        @include fonts-and-sizes(
+          Montserrat-Regular,
+          1rem,
+          $primary-color-for-h2
+        );
+        background-color: $bg-color-for-p;
+        width: 9rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0.5rem;
+        margin-bottom: 0.7rem;
+      }
+
+      h1 {
+        @include fonts-and-sizes(
+          Montserrat-Bold,
+          2.2rem,
+          $primary-color-for-h2
+        );
+
+        span {
+          font-size: 2.6rem;
+        }
+        width: 28rem;
+        margin-left: 0.55rem;
+        letter-spacing: -0.08rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $primary-color-for-h2;
+        margin-bottom: 1.7rem;
+      }
+
+      h1 + p {
+        @include fonts-and-sizes(sans-serif, 1.6rem, $primary-color-for-h2);
+        margin-left: 0.55rem;
+        line-height: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      .for-icon-and-p {
+        display: flex;
+        align-items: center;
+        margin-left: 0.55rem;
+        border-bottom: 1px solid $primary-color-for-h2;
+
+        p {
+          @include fonts-and-sizes(
+            Montserrat-Regular,
+            1.8rem,
+            $primary-color-for-p
+          );
+
+          margin-left: 0.7rem;
+          text-transform: uppercase;
+        }
+      }
+
+      .for-fa-icons {
+        width: 13rem;
+        height: 4rem;
+        border-top: 1px solid $primary-color-for-icons;
+        border-left: 1px solid $primary-color-for-icons;
+        border-bottom: 1px solid $primary-color-for-icons;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        .fa-solid,
+        .fa-regular {
+          font-size: 2.1rem;
+          color: $primary-color-for-icons;
         }
 
-        h1 + p {
-          @include fonts-and-sizes(sans-serif, 16px, $primary-color-for-h2);
+        .fa-eye,
+        .fa-image {
+          border-right: 1px solid $primary-color-for-icons;
+          padding: 1rem;
         }
 
-        .for-icon-and-p {
-          display: flex;
-
-          p {
-            @include fonts-and-sizes(
-              Montserrat-Regular,
-              18px,
-              $primary-color-for-p
-            );
-
-            text-transform: uppercase;
-          }
+        .fa-location-dot {
+          padding: 1rem 0 1rem 1rem;
         }
       }
     }
-    .red-container + svg {
-      display: inline-block;
-      width: 3.35%;
+  }
+  .red-container + svg {
+    display: inline-block;
+    width: 6.3rem;
+    height: 5.9rem;
+  }
+  .container-for-borders {
+    display: flex;
+
+    .grey-border {
+      width: 55rem;
+      height: 6.5rem;
+      background-color: $primary-color-for-grey-border;
     }
-    .container-for-borders {
+
+    .black-border {
+      width: 135rem;
+      height: 6.5rem;
+      background-color: $primary-color-for-black-border;
       display: flex;
+      justify-content: center;
+      align-items: center;
 
-      .grey-border {
-        width: 28.646%;
-        height: 65px;
-        background-color: $primary-color-for-grey-border;
-      }
+      div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 11.6rem;
+        height: 6.2rem;
 
-      .black-border {
-        width: 71.354%;
-        height: 65px;
-        background-color: $primary-color-for-black-border;
+        .fa-solid {
+          font-size: 2.4rem;
+          line-height: 2.2rem;
+          color: $primary-color-for-icons;
+        }
       }
     }
   }

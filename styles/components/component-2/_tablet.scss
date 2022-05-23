@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+
+    .component-2 {
+      height: 47rem;
+
+      .container-for-divs {
+        display: flex;
+
+        .div-before-grey {
+          width: 0;
+          height: 0;
+          display: none;
+        }
+
+        .grey-container {
+          width: 0;
+          height: 0;
+          display: none;
+        }
+      }
+
+      .text-container {
+        margin-left: 9rem;
+      }
+    }
+  }
+}

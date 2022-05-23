@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+
+    .component-3 {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      background-color: $background-color;
+      padding: 0 0 5.5rem 0;
+      position: relative;
+
+      .huge-div {
+        width: 59.2rem;
+        height: 29.6rem;
+        background-color: $h1-color;
+        margin: 10rem auto 2.2rem 9rem;
+      }
+
+      h1 {
+        @include fonts-and-sizes(Montserrat-Bold, 3rem, $h1-color);
+        line-height: 2.5rem;
+        padding-top: 4.5rem;
+        padding-bottom: 3.9rem;
+        letter-spacing: -0.1rem;
+        position: absolute;
+        top: 0;
+        left: 9rem;
+      }
+
+      .grid-container-div {
+        display: flex;
+        width: 59.2rem;
+        justify-content: space-between;
+        margin: 0 auto 0 9rem;
+
+        div {
+          width: 9.4rem;
+          height: 8.6rem;
+        }
+
+        .cube-hidden {
+          width: 0;
+          height: 0;
+          border: none;
+          visibility: hidden;
+          display: none;
+        }
+      }
+    }
+  }
+}

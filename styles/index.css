@@ -377,7 +377,11 @@ header .container-for-borders .black-border div .fa-solid {
     width: 4rem;
   }
   header .header-inner-container .red-container {
-    width: 32rem;
+    width: 31.5rem;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 4.2rem;
   }
   header .container-for-borders .grey-border {
     width: 4rem;
@@ -515,6 +519,31 @@ main .component-2 .text-container .p-grid-container .p4 {
   grid-column: span 2;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+  }
+  main .component-2 {
+    height: 47rem;
+  }
+  main .component-2 .container-for-divs {
+    display: flex;
+  }
+  main .component-2 .container-for-divs .div-before-grey {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  main .component-2 .container-for-divs .grey-container {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  main .component-2 .text-container {
+    margin-left: 9rem;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
   html {
     font-size: 33.3%;
@@ -587,6 +616,55 @@ main .component-3 .grid-container-div div:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+  }
+  main .component-3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #111111;
+    padding: 0 0 5.5rem 0;
+    position: relative;
+  }
+  main .component-3 .huge-div {
+    width: 59.2rem;
+    height: 29.6rem;
+    background-color: #fefefe;
+    margin: 10rem auto 2.2rem 9rem;
+  }
+  main .component-3 h1 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 3rem;
+    color: #fefefe;
+    line-height: 2.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 3.9rem;
+    letter-spacing: -0.1rem;
+    position: absolute;
+    top: 0;
+    left: 9rem;
+  }
+  main .component-3 .grid-container-div {
+    display: flex;
+    width: 59.2rem;
+    justify-content: space-between;
+    margin: 0 auto 0 9rem;
+  }
+  main .component-3 .grid-container-div div {
+    width: 9.4rem;
+    height: 8.6rem;
+  }
+  main .component-3 .grid-container-div .cube-hidden {
+    width: 0;
+    height: 0;
+    border: none;
+    visibility: hidden;
+    display: none;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
   html {
     font-size: 33.3%;
@@ -685,6 +763,64 @@ main .component-4 .component-4-container .directions-p + svg {
   height: 10rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+  }
+  main .component-4 {
+    width: 100%;
+  }
+  main .component-4 iframe {
+    position: absolute;
+    z-index: -1;
+    width: 76.8rem;
+    height: 44rem;
+  }
+  main .component-4 .component-4-container {
+    width: 34.4rem;
+    margin-left: 4rem;
+  }
+  main .component-4 .component-4-container h1 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 3rem;
+    color: #fefefe;
+    text-align: center;
+    padding-top: 5.5rem;
+    margin-bottom: 3rem;
+  }
+  main .component-4 .component-4-container .pin-circle {
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.316);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.1rem auto;
+  }
+  main .component-4 .component-4-container .pin-circle svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  main .component-4 .component-4-container .pin-circle + p {
+    font-family: OpenSans-Light, sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    margin: 0 auto 2rem auto;
+  }
+  main .component-4 .component-4-container .directions-p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
   html {
     font-size: 33.3%;
@@ -724,26 +860,70 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer img {
+footer.component-footer img {
   display: inline-block;
   margin-top: 3rem;
   margin-left: 20rem;
   width: 21rem;
   height: 7rem;
 }
-footer p {
+footer.component-footer p {
   font-family: Montserrat-Regular, sans-serif;
   font-size: 1.4rem;
   color: #fefefe;
   line-height: 1.68rem;
   display: inline-block;
 }
-footer .fa-angle-up {
+footer.component-footer .fa-angle-up {
   font-size: 3.9rem;
   color: #fefefe;
   padding: 1rem;
   margin-right: 10rem;
   border: 1px solid #fefefe;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    min-width: 76.8rem;
+    max-width: 102.3rem;
+    position: relative;
+    height: 16.1rem;
+    margin: 0 auto;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer.component-footer img {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0;
+    width: 21rem;
+    height: 7rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 5.5rem;
+  }
+  footer.component-footer p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.4rem;
+    color: #fefefe;
+    line-height: 1.68rem;
+    display: inline-block;
+    position: absolute;
+    top: 10rem;
+    left: 8.5rem;
+  }
+  footer.component-footer .fa-angle-up {
+    font-size: 2.4rem;
+    color: #fefefe;
+    padding: 0.8rem;
+    margin-right: 10rem;
+    border: 2px solid #fefefe;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

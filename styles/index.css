@@ -205,7 +205,7 @@ html {
     font-size: 45.6%;
   }
 }
-@media screen and (min-width: 1600px) and (max-width: 1919px) {
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
   html {
     font-size: 52.08%;
   }
@@ -273,11 +273,10 @@ header .header-inner-container .red-container h1 {
   font-size: 2.2rem;
   color: #ffffff;
   width: 28rem;
-  margin-left: 0.55rem;
+  margin: 0 0 1.7rem 0.55rem;
   letter-spacing: -0.08rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #ffffff;
-  margin-bottom: 1.7rem;
 }
 header .header-inner-container .red-container h1 span {
   font-size: 2.6rem;
@@ -286,9 +285,8 @@ header .header-inner-container .red-container h1 + p {
   font-family: OpenSans-Light, sans-serif;
   font-size: 1.6rem;
   color: #ffffff;
-  margin-left: 0.55rem;
   line-height: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0.55rem;
   padding-bottom: 2.2rem;
   width: 28rem;
   border-bottom: 1px solid #ffffff;
@@ -325,6 +323,11 @@ header .header-inner-container .red-container .for-fa-icons .fa-solid,
 header .header-inner-container .red-container .for-fa-icons .fa-regular {
   font-size: 2.1rem;
   color: #ffffff;
+}
+header .header-inner-container .red-container .for-fa-icons .fa-solid:hover,
+header .header-inner-container .red-container .for-fa-icons .fa-regular:hover {
+  cursor: pointer;
+  color: #111111;
 }
 header .header-inner-container .red-container .for-fa-icons .fa-eye,
 header .header-inner-container .red-container .for-fa-icons .fa-image {
@@ -366,6 +369,13 @@ header .container-for-borders .black-border div .fa-solid {
   font-size: 2.6rem;
   line-height: 2.2rem;
   color: #ffffff;
+  padding: 1rem;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+header .container-for-borders .black-border div .fa-solid:hover {
+  cursor: pointer;
+  color: #ed1c24;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -489,8 +499,7 @@ main .component-2 .text-container h1 {
   font-family: Montserrat-Bold, sans-serif;
   font-size: 3rem;
   color: #222222;
-  margin-top: 4rem;
-  margin-bottom: 4.4rem;
+  margin: 4rem 0 4.4rem 0;
   letter-spacing: -0.1rem;
 }
 main .component-2 .text-container .p-grid-container {
@@ -844,8 +853,7 @@ main .component-4 .component-4-container .pin-circle + p {
   color: #ffffff;
   text-align: center;
   line-height: 2rem;
-  padding-top: 1.8rem;
-  padding-bottom: 1.8rem;
+  padding: 1.8rem 0 1.8rem 0;
   margin: 0 auto 2.3rem auto;
   border-bottom: 1px solid white;
   width: 28rem;
@@ -978,13 +986,12 @@ footer {
   margin: 0 auto;
   background-color: #111111;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 footer.component-footer img {
   display: inline-block;
-  margin-top: 3rem;
-  margin-left: 20rem;
+  margin: 3rem 36rem 0 20rem;
   width: 21rem;
   height: 7rem;
 }
@@ -994,13 +1001,28 @@ footer.component-footer p {
   color: #fefefe;
   line-height: 1.68rem;
   display: inline-block;
+  font-weight: bold;
+  margin-right: 27.5rem;
+}
+footer.component-footer p:hover {
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+footer.component-footer p:hover span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ed1c24;
 }
 footer.component-footer .fa-angle-up {
   font-size: 3.9rem;
   color: #fefefe;
-  padding: 1rem;
-  margin-right: 10rem;
+  padding: 0.2rem;
+  margin-right: 12rem;
   border: 1px solid #fefefe;
+}
+footer.component-footer .fa-angle-up:hover {
+  cursor: pointer;
+  color: #ed1c24;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

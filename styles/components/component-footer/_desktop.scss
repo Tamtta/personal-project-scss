@@ -4,14 +4,16 @@ footer {
   margin: 0 auto;
   background-color: $footer-bg-color;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
   &.component-footer {
     img {
       display: inline-block;
-      margin-top: 3rem;
-      margin-left: 20rem;
+      // margin-top: 3rem;
+      // margin-left: 20rem;
+      // margin-right: 36rem;
+      margin: 3rem 36rem 0 20rem;
       width: 21rem;
       height: 7rem;
     }
@@ -20,14 +22,32 @@ footer {
       @include fonts-and-sizes(Montserrat-Regular, 1.4rem, $footer-p-color);
       line-height: 1.68rem;
       display: inline-block;
+      font-weight: bold;
+      margin-right: 27.5rem;
+
+      &:hover {
+        cursor: pointer;
+        padding-bottom: 0.5rem;
+
+        span {
+          display: inline-block;
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid $icon-hover;
+        }
+      }
     }
 
     .fa-angle-up {
       font-size: 3.9rem;
       color: $footer-p-color;
-      padding: 1rem;
-      margin-right: 10rem;
+      padding: 0.2rem;
+      margin-right: 12rem;
       border: 1px solid $footer-p-color;
+
+      &:hover {
+        cursor: pointer;
+        color: $icon-hover;
+      }
     }
   }
 }

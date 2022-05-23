@@ -46,8 +46,9 @@ main {
         @include fonts-and-sizes(OpenSans-Light, 1.6rem, $primary-color-for-h2);
         text-align: center;
         line-height: 2rem;
-        padding-top: 1.8rem;
-        padding-bottom: 1.8rem;
+        // padding-top: 1.8rem;
+        // padding-bottom: 1.8rem;
+        padding: 1.8rem 0 1.8rem 0;
         margin: 0 auto 2.3rem auto;
         // margin-bottom: 2.5rem;
         border-bottom: 1px solid white;

@@ -29,8 +29,9 @@ main {
     .text-container {
       h1 {
         @include fonts-and-sizes(Montserrat-Bold, 3rem, $primary-color-h1);
-        margin-top: 4rem;
-        margin-bottom: 4.4rem;
+        margin: 4rem 0 4.4rem 0;
+        // margin-top: 4rem;
+        // margin-bottom: 4.4rem;
         letter-spacing: -0.1rem;
       }
 

@@ -18,7 +18,9 @@ main {
 
     h1 {
       @include fonts-and-sizes(Montserrat-Bold, 3rem, $h1-color);
-      margin-bottom: 3.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 3.9rem;
+      letter-spacing: -0.1rem;
     }
 
     .grid-container-div {
@@ -28,8 +30,8 @@ main {
       row-gap: 1.45rem;
 
       div {
-        width: 9.302rem;
-        height: 8.69rem;
+        width: 8.8rem;
+        height: 8rem;
         background-color: $h1-color;
         border: 7px solid $h1-color;
 

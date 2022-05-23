@@ -1,0 +1,48 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer {
+    min-width: 32rem;
+    max-width: 76.7rem;
+
+    height: 16.1rem;
+    margin: 0 auto;
+    background-color: $footer-bg-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &.component-footer {
+      img {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
+        width: 18rem;
+        height: 6rem;
+        position: absolute;
+        top: 3rem;
+        // left: 5.5rem;
+      }
+
+      p {
+        @include fonts-and-sizes(Montserrat-Regular, 1.4rem, $footer-p-color);
+        line-height: 1.68rem;
+        display: block;
+        position: absolute;
+        top: 10.5rem;
+        left: 2.5rem;
+      }
+
+      .fa-angle-up {
+        font-size: 2.4rem;
+        color: $footer-p-color;
+        padding: 0.8rem;
+        margin-right: 0;
+        border: 2px solid $footer-p-color;
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 2.5rem;
+      }
+    }
+  }
+}

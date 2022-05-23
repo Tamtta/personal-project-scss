@@ -406,7 +406,7 @@ header .container-for-borders .black-border div .fa-solid {
     width: 0;
   }
   header .header-inner-container .red-container {
-    width: 27rem;
+    width: 24.3rem;
   }
   header .header-inner-container .red-container .for-fa-icons {
     border: 1px solid #ffffff;
@@ -417,7 +417,7 @@ header .container-for-borders .black-border div .fa-solid {
   }
   header .red-container + svg {
     position: absolute;
-    right: 1rem;
+    right: 2.3rem;
     top: 1.5rem;
   }
   header .container-for-borders .grey-border {
@@ -544,6 +544,53 @@ main .component-2 .text-container .p-grid-container .p4 {
     margin-left: 9rem;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    min-width: 32rem;
+    max-width: 76.7rem;
+  }
+  main .component-2 {
+    height: 59.3rem;
+  }
+  main .component-2 .container-for-divs {
+    display: flex;
+  }
+  main .component-2 .container-for-divs .div-before-grey {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  main .component-2 .container-for-divs .grey-container {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  main .component-2 .text-container {
+    margin-left: 0 auto;
+    width: 32rem;
+  }
+  main .component-2 .text-container h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 2.8rem;
+  }
+  main .component-2 .text-container .p-grid-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main .component-2 .text-container .p-grid-container p {
+    text-align: center;
+  }
+  main .component-2 .text-container .p-grid-container .p1 {
+    font-size: 1.8rem;
+  }
+  main .component-2 .text-container .p-grid-container .p1,
+main .component-2 .text-container .p-grid-container .p2 {
+    grid-column: span 0;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
   html {
     font-size: 33.3%;
@@ -658,6 +705,60 @@ main .component-3 .grid-container-div div:hover {
     height: 8.6rem;
   }
   main .component-3 .grid-container-div .cube-hidden {
+    width: 0;
+    height: 0;
+    border: none;
+    visibility: hidden;
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    min-width: 32rem;
+    max-width: 76.7rem;
+  }
+  main .component-3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #111111;
+    padding: 0 0 5rem 0;
+    position: relative;
+  }
+  main .component-3 .huge-div {
+    width: 27.1rem;
+    height: 19.1rem;
+    background-color: #fefefe;
+    margin: 10.5rem auto 1.8rem auto;
+  }
+  main .component-3 h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 3.9rem;
+    letter-spacing: -0.1rem;
+    position: absolute;
+    top: 0;
+    left: 11.5rem;
+  }
+  main .component-3 .grid-container-div {
+    display: flex;
+    width: 59.2rem;
+    justify-content: space-between;
+    margin: 0 auto 0 9rem;
+  }
+  main .component-3 .grid-container-div div {
+    width: 9.4rem;
+    height: 8.6rem;
+  }
+  main .component-3 .grid-container-div .cube-hidden {
+    width: 0;
+    height: 0;
+    border: none;
+    visibility: hidden;
+    display: none;
+  }
+  main .component-3 .grid-container-div .cube-mobile {
     width: 0;
     height: 0;
     border: none;
@@ -821,6 +922,26 @@ main .component-4 .component-4-container .directions-p + svg {
     text-align: center;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    min-width: 32rem;
+    max-width: 76.7rem;
+  }
+  main .component-4 {
+    width: 100%;
+  }
+  main .component-4 iframe {
+    position: absolute;
+    z-index: -1;
+    width: 32rem;
+    height: 40.3rem;
+  }
+  main .component-4 .component-4-container {
+    width: 27rem;
+    height: 40.3rem;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
   html {
     font-size: 33.3%;
@@ -923,6 +1044,49 @@ footer.component-footer .fa-angle-up {
     position: absolute;
     top: 6rem;
     right: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer {
+    min-width: 32rem;
+    max-width: 76.7rem;
+    height: 16.1rem;
+    margin: 0 auto;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  footer.component-footer img {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0;
+    width: 18rem;
+    height: 6rem;
+    position: absolute;
+    top: 3rem;
+  }
+  footer.component-footer p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.4rem;
+    color: #fefefe;
+    line-height: 1.68rem;
+    display: block;
+    position: absolute;
+    top: 10.5rem;
+    left: 2.5rem;
+  }
+  footer.component-footer .fa-angle-up {
+    font-size: 2.4rem;
+    color: #fefefe;
+    padding: 0.8rem;
+    margin-right: 0;
+    border: 2px solid #fefefe;
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
   }
 }
 

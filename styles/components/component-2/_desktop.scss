@@ -6,7 +6,6 @@ main {
   .component-2 {
     width: 100%;
     display: flex;
-    // align-items: flex-start;
     justify-content: flex-start;
 
     .container-for-divs {
@@ -30,8 +29,6 @@ main {
       h1 {
         @include fonts-and-sizes(Montserrat-Bold, 3rem, $primary-color-h1);
         margin: 4rem 0 4.5rem 0;
-        // margin-top: 4rem;
-        // margin-bottom: 4.4rem;
         letter-spacing: -0.1rem;
       }
 
@@ -39,8 +36,6 @@ main {
         width: 59.5rem;
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-        // row-gap: 1.7rem;
-        // column-gap: 0.1rem;
 
         .p1 {
           @include fonts-and-sizes(OpenSans-Light, 2rem, $primary-color-p);
@@ -58,7 +53,6 @@ main {
 
         .p4 {
           grid-column: span 2;
-          // line-height: 2rem;
         }
       }
     }

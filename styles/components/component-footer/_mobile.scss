@@ -3,7 +3,7 @@
     min-width: 32rem;
     max-width: 76.7rem;
 
-    height: 16.1rem;
+    height: 16.7rem;
     margin: 0 auto;
     background-color: $footer-bg-color;
     display: flex;
@@ -16,15 +16,15 @@
         display: inline-block;
         margin-top: 0;
         margin-left: 0;
-        width: 18rem;
-        height: 6rem;
+        width: 19rem;
+        height: 7rem;
         position: absolute;
         top: 3rem;
-        // left: 5.5rem;
       }
 
       p {
-        @include fonts-and-sizes(Montserrat-Regular, 1.4rem, $footer-p-color);
+        font-size: 1.2rem;
+        width: 28rem;
         line-height: 1.68rem;
         display: block;
         position: absolute;
@@ -35,12 +35,12 @@
       .fa-angle-up {
         font-size: 2.4rem;
         color: $footer-p-color;
-        padding: 0.8rem;
-        margin-right: 0;
-        border: 2px solid $footer-p-color;
+        padding: 0.7rem 0.9rem;
+        margin-right: 0rem;
+        border: 0.1rem solid $footer-p-color;
         display: inline-block;
         position: absolute;
-        top: 2rem;
+        top: 2.5rem;
         right: 2.5rem;
       }
     }

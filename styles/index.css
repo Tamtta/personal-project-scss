@@ -239,8 +239,7 @@ header .header-inner-container .red-container {
 header .header-inner-container .red-container .container-for-img-and-h2 {
   display: flex;
   align-items: flex-start;
-  margin-top: 3rem;
-  margin-bottom: 3.9rem;
+  margin: 3rem 0 3.9rem 0;
 }
 header .header-inner-container .red-container .container-for-img-and-h2 img {
   display: inline-block;
@@ -383,11 +382,16 @@ header .container-for-borders .black-border div .fa-solid:hover {
     min-width: 76.8rem;
     max-width: 102.3rem;
   }
+  header .header-inner-container {
+    height: 42.2rem;
+  }
   header .header-inner-container .div-before-red {
     width: 4rem;
+    height: 42.2rem;
   }
   header .header-inner-container .red-container {
     width: 31.5rem;
+    height: 42.2rem;
   }
   header .header-inner-container .red-container .container-for-img-and-h2 {
     margin-top: 2.5rem;
@@ -401,7 +405,7 @@ header .container-for-borders .black-border div .fa-solid:hover {
     justify-content: flex-end;
   }
   header .container-for-borders .black-border div {
-    margin-right: 3rem;
+    left: 55rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -416,7 +420,42 @@ header .container-for-borders .black-border div .fa-solid:hover {
     width: 0;
   }
   header .header-inner-container .red-container {
-    width: 24.3rem;
+    width: 24.2rem;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2.8rem;
+    margin-bottom: 5.5rem;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 img {
+    display: inline-block;
+    height: 3.8rem;
+    width: 3.8rem;
+    margin-right: 0.1rem;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 h2 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.03rem;
+  }
+  header .header-inner-container .red-container .container-for-img-and-h2 + p {
+    margin-bottom: 0.7rem;
+    margin-left: 0.5rem;
+  }
+  header .header-inner-container .red-container h1 {
+    width: 20rem;
+  }
+  header .header-inner-container .red-container h1 + p {
+    font-size: 1.4rem;
+    margin: 0 0 1.6rem 0.55rem;
+    padding-bottom: 2.1rem;
+    width: 20rem;
   }
   header .header-inner-container .red-container .for-fa-icons {
     border: 1px solid #ffffff;
@@ -427,7 +466,7 @@ header .container-for-borders .black-border div .fa-solid:hover {
   }
   header .red-container + svg {
     position: absolute;
-    right: 2.3rem;
+    right: 2.4rem;
     top: 1.5rem;
   }
   header .container-for-borders .grey-border {
@@ -435,7 +474,7 @@ header .container-for-borders .black-border div .fa-solid:hover {
   }
   header .container-for-borders .black-border {
     width: 100%;
-    height: 6rem;
+    height: 6.1rem;
   }
   header .container-for-borders .black-border div .fa-solid {
     visibility: hidden;
@@ -533,7 +572,7 @@ main .component-2 .text-container .p-grid-container .p4 {
     max-width: 102.3rem;
   }
   main .component-2 {
-    height: 47rem;
+    height: 47.15rem;
   }
   main .component-2 .container-for-divs {
     display: flex;
@@ -551,6 +590,30 @@ main .component-2 .text-container .p-grid-container .p4 {
   main .component-2 .text-container {
     margin-left: 9rem;
   }
+  main .component-2 .text-container h1 {
+    margin-top: 4.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: -0.09rem;
+  }
+  main .component-2 .text-container .p-grid-container {
+    grid-template-rows: 12.2rem 11rem 9rem;
+  }
+  main .component-2 .text-container .p-grid-container .p1 {
+    margin-bottom: 2.3rem;
+  }
+  main .component-2 .text-container .p-grid-container .p1 span {
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #222222;
+  }
+  main .component-2 .text-container .p-grid-container .p2,
+main .component-2 .text-container .p-grid-container .p3,
+main .component-2 .text-container .p-grid-container .p4 {
+    height: 9rem;
+  }
+  main .component-2 .text-container .p-grid-container .p4 {
+    padding-bottom: 1rem;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main {
@@ -558,7 +621,7 @@ main .component-2 .text-container .p-grid-container .p4 {
     max-width: 76.7rem;
   }
   main .component-2 {
-    height: 59.3rem;
+    height: 60rem;
   }
   main .component-2 .container-for-divs {
     display: flex;
@@ -580,8 +643,8 @@ main .component-2 .text-container .p-grid-container .p4 {
   main .component-2 .text-container h1 {
     text-align: center;
     font-size: 2.4rem;
-    margin-top: 3.2rem;
-    margin-bottom: 2.8rem;
+    margin-top: 3.8rem;
+    margin-bottom: 2.5rem;
   }
   main .component-2 .text-container .p-grid-container {
     width: auto;
@@ -593,6 +656,13 @@ main .component-2 .text-container .p-grid-container .p4 {
   }
   main .component-2 .text-container .p-grid-container .p1 {
     font-size: 1.8rem;
+    margin-bottom: 2.1rem;
+  }
+  main .component-2 .text-container .p-grid-container .p2 {
+    margin-bottom: 1.6rem;
+  }
+  main .component-2 .text-container .p-grid-container .p3 {
+    margin-bottom: 1.4rem;
   }
   main .component-2 .text-container .p-grid-container .p1,
 main .component-2 .text-container .p-grid-container .p2 {
@@ -688,14 +758,14 @@ main .component-3 .grid-container-div div:hover {
     width: 59.2rem;
     height: 29.6rem;
     background-color: #fefefe;
-    margin: 10rem auto 2.2rem 9rem;
+    margin: 10rem auto 2.4rem 9rem;
   }
   main .component-3 h1 {
     font-family: Montserrat-Bold, sans-serif;
     font-size: 3rem;
     color: #fefefe;
     line-height: 2.5rem;
-    padding-top: 4.5rem;
+    padding-top: 4.6rem;
     padding-bottom: 3.9rem;
     letter-spacing: -0.1rem;
     position: absolute;
@@ -706,10 +776,11 @@ main .component-3 .grid-container-div div:hover {
     display: flex;
     width: 59.2rem;
     justify-content: space-between;
+    column-gap: 0;
     margin: 0 auto 0 9rem;
   }
   main .component-3 .grid-container-div div {
-    width: 9.4rem;
+    width: 9.5rem;
     height: 8.6rem;
   }
   main .component-3 .grid-container-div .cube-hidden {
@@ -737,12 +808,12 @@ main .component-3 .grid-container-div div:hover {
     width: 27.1rem;
     height: 19.1rem;
     background-color: #fefefe;
-    margin: 10.5rem auto 1.8rem auto;
+    margin: 10rem auto 1.9rem auto;
   }
   main .component-3 h1 {
     font-size: 2.4rem;
     line-height: 2.5rem;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     padding-bottom: 3.9rem;
     letter-spacing: -0.1rem;
     position: absolute;
@@ -884,11 +955,12 @@ main .component-4 .component-4-container .directions-p + svg {
     position: absolute;
     z-index: -1;
     width: 76.8rem;
-    height: 44rem;
+    height: 43.6rem;
   }
   main .component-4 .component-4-container {
     width: 34.4rem;
     margin-left: 4rem;
+    height: 43.6rem;
   }
   main .component-4 .component-4-container h1 {
     font-family: Montserrat-Bold, sans-serif;
@@ -897,6 +969,7 @@ main .component-4 .component-4-container .directions-p + svg {
     text-align: center;
     padding-top: 5.5rem;
     margin-bottom: 3rem;
+    padding-left: 1rem;
   }
   main .component-4 .component-4-container .pin-circle {
     width: 4.25rem;
@@ -906,11 +979,11 @@ main .component-4 .component-4-container .directions-p + svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 0.1rem auto;
+    margin: 0 auto 0 auto;
   }
   main .component-4 .component-4-container .pin-circle svg {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
   main .component-4 .component-4-container .pin-circle + p {
     font-family: OpenSans-Light, sans-serif;
@@ -928,6 +1001,12 @@ main .component-4 .component-4-container .directions-p + svg {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
+    padding-left: 1rem;
+  }
+  main .component-4 .component-4-container .directions-p + svg {
+    width: 13rem;
+    height: 9.5rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -948,6 +1027,21 @@ main .component-4 .component-4-container .directions-p + svg {
     width: 27rem;
     height: 40.3rem;
     margin: 0 auto;
+  }
+  main .component-4 .component-4-container h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  main .component-4 .component-4-container .pin-circle {
+    margin: 0 auto 1rem auto;
+  }
+  main .component-4 .component-4-container .pin-circle + p {
+    font-size: 1.4rem;
+    padding: 1.6rem 0 1.7rem 0;
+    margin: 0 auto 2.5rem auto;
+    width: 20rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1026px) {
@@ -1041,8 +1135,8 @@ footer.component-footer .fa-angle-up:hover {
     display: inline-block;
     margin-top: 0;
     margin-left: 0;
-    width: 21rem;
-    height: 7rem;
+    width: 22rem;
+    height: 8rem;
     position: absolute;
     top: 3.5rem;
     left: 5.5rem;
@@ -1055,16 +1149,16 @@ footer.component-footer .fa-angle-up:hover {
     display: inline-block;
     position: absolute;
     top: 10rem;
-    left: 8.5rem;
+    left: 8.8rem;
   }
   footer.component-footer .fa-angle-up {
     font-size: 2.4rem;
     color: #fefefe;
-    padding: 0.8rem;
-    margin-right: 10rem;
-    border: 2px solid #fefefe;
+    padding: 0.7rem 0.9rem;
+    margin-right: 8.6rem;
+    border: 0.1rem solid #fefefe;
     position: absolute;
-    top: 6rem;
+    top: 6.2rem;
     right: 0;
   }
 }
@@ -1072,7 +1166,7 @@ footer.component-footer .fa-angle-up:hover {
   footer {
     min-width: 32rem;
     max-width: 76.7rem;
-    height: 16.1rem;
+    height: 16.7rem;
     margin: 0 auto;
     background-color: #111111;
     display: flex;
@@ -1084,15 +1178,14 @@ footer.component-footer .fa-angle-up:hover {
     display: inline-block;
     margin-top: 0;
     margin-left: 0;
-    width: 18rem;
-    height: 6rem;
+    width: 19rem;
+    height: 7rem;
     position: absolute;
     top: 3rem;
   }
   footer.component-footer p {
-    font-family: Montserrat-Regular, sans-serif;
-    font-size: 1.4rem;
-    color: #fefefe;
+    font-size: 1.2rem;
+    width: 28rem;
     line-height: 1.68rem;
     display: block;
     position: absolute;
@@ -1102,12 +1195,12 @@ footer.component-footer .fa-angle-up:hover {
   footer.component-footer .fa-angle-up {
     font-size: 2.4rem;
     color: #fefefe;
-    padding: 0.8rem;
-    margin-right: 0;
-    border: 2px solid #fefefe;
+    padding: 0.7rem 0.9rem;
+    margin-right: 0rem;
+    border: 0.1rem solid #fefefe;
     display: inline-block;
     position: absolute;
-    top: 2rem;
+    top: 2.5rem;
     right: 2.5rem;
   }
 }

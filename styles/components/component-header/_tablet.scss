@@ -4,12 +4,15 @@
     max-width: 102.3rem;
 
     .header-inner-container {
+      height: 42.2rem;
       .div-before-red {
         width: 4rem;
+        height: 42.2rem;
       }
 
       .red-container {
         width: 31.5rem;
+        height: 42.2rem;
 
         .container-for-img-and-h2 {
           margin-top: 2.5rem;
@@ -28,7 +31,7 @@
         justify-content: flex-end;
 
         div {
-          margin-right: 3rem;
+          left: 55rem;
         }
       }
     }

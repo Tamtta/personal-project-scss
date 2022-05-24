@@ -354,24 +354,24 @@ header .container-for-borders .black-border {
   width: 137rem;
   height: 6.15rem;
   background-color: #111111;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  position: relative;
 }
 header .container-for-borders .black-border div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 16.6rem;
   height: 6.2rem;
+  position: absolute;
+  left: 51rem;
 }
 header .container-for-borders .black-border div .fa-solid {
   font-size: 2.6rem;
   line-height: 2.2rem;
   color: #ffffff;
-  padding: 1rem;
-  border-right: 0.05rem solid #ffffff;
-  border-left: 0.05rem solid #ffffff;
+  padding: 2rem;
+  border-right: 0.02rem solid #ffffff;
+  border-left: 0.02rem solid #ffffff;
 }
 header .container-for-borders .black-border div .fa-solid:hover {
   cursor: pointer;

@@ -179,24 +179,24 @@ header {
       width: 137rem;
       height: 6.15rem;
       background-color: $primary-color-for-black-border;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      position: relative;
 
       div {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         width: 16.6rem;
         height: 6.2rem;
+        position: absolute;
+        left: 51rem;
 
         .fa-solid {
           font-size: 2.6rem;
           line-height: 2.2rem;
           color: $primary-color-for-icons;
-          padding: 1rem;
-          border-right: 0.05rem solid $primary-color-for-icons;
-          border-left: 0.05rem solid $primary-color-for-icons;
+          padding: 2rem;
+          border-right: 0.02rem solid $primary-color-for-icons;
+          border-left: 0.02rem solid $primary-color-for-icons;
 
           &:hover {
             cursor: pointer;
